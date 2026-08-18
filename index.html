@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poster Companion Page</title>
+  <style>
+    :root {
+      --bg: #f5f0e6;
+      --card: #fffdf8;
+      --ink: #1a1610;
+      --muted: #675f52;
+      --navy: #142444;
+      --accent: #b8732a;
+      --rule: #d7cfbf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #efe8d9 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 56px; }
+    .hero {
+      background: var(--navy);
+      color: white;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 14px 36px rgba(20, 36, 68, 0.18);
+    }
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 0 0 12px; font-size: 34px; line-height: 1.15; }
+    .subtitle { max-width: 760px; font-size: 18px; color: rgba(255,255,255,0.88); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-secondary { background: transparent; color: white; border-color: rgba(255,255,255,0.35); }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: var(--navy);
+    }
+    p { margin: 0 0 12px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .poster-box {
+      border: 1px dashed var(--rule);
+      border-radius: 12px;
+      padding: 14px;
+      background: #faf6ee;
+    }
+    .poster-box svg { width: 100%; height: auto; display: block; }
+    .list { margin: 0; padding-left: 18px; }
+    .list li { margin-bottom: 10px; }
+    .kicker {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .footer {
+      margin-top: 18px;
+      padding: 16px 4px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    code { background: #f1eadb; padding: 2px 6px; border-radius: 6px; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 28px; }
+      .subtitle { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Digital companion page</div>
+      <h1>[Insert poster title here]</h1>
+      <p class="subtitle">This page provides access to the digital poster, supplementary materials, references, and additional project information for conference viewers scanning the QR code.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="./poster-EMPG2026.pdf" target="_blank" rel="noopener">Open full poster (PDF)</a>
+        <a class="btn btn-secondary" href="#references">Jump to references</a>
+      </div>
+    </section>
+
+    <section class="grid">
+     <article class="card">
+      <div class="kicker">About this poster</div>
+      <h2>Overview</h2>
+      <p>STRUCTURA is a framework designed to support the interpretation of individual test scores within network psychometrics. Whereas most current approaches in network psychometrics primarily treat psychological data at the aggregate or group level, STRUCTURA shifts the focus to the person and to the configuration of single observed responses. In this way, it offers a principled method for examining how individual score profiles can be interpreted within a network-based measurement perspective, thereby contributing to the advancement of measurement theory in network psychometrics. The poster introduces the general rationale of the framework and illustrates its application through signed SI profiles, including extensions to GSI and TESS, in order to show how local and person-specific response patterns can yield substantively meaningful information beyond summary-level analyses.</p>
+    </article>
+
+      <aside class="card">
+        <div class="kicker">Poster access</div>
+        <h2>Where to find the digital version</h2>
+        <p>The complete digital poster is available as a downloadable PDF.</p>
+        <p><a href="./poster-EMPG2026.pdf" target="_blank" rel="noopener">Open or download poster.pdf</a></p>
+        <div class="poster-box" aria-label="Poster preview placeholder">
+          <svg viewBox="0 0 300 420" role="img" aria-label="Poster placeholder illustration">
+            <rect x="10" y="10" width="280" height="400" rx="12" fill="#fffdf8" stroke="#d7cfbf" />
+            <rect x="28" y="28" width="244" height="34" rx="6" fill="#142444" />
+            <rect x="28" y="76" width="110" height="136" rx="6" fill="#efe8d9" />
+            <rect x="150" y="76" width="122" height="136" rx="6" fill="#efe8d9" />
+            <rect x="28" y="226" width="244" height="64" rx="6" fill="#efe8d9" />
+            <rect x="28" y="302" width="244" height="84" rx="6" fill="#efe8d9" />
+          </svg>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="kicker">Citation and contact</div>
+        <h2>How to cite or contact</h2>
+        <p><strong>Authors:</strong> [Insert author names]</p>
+        <p><strong>Conference:</strong> [Insert conference name and year]</p>
+        <p><strong>Email or contact page:</strong> <a href="mailto:matteo.orsoni2@unibo.it">matteo.orsoni2@unibo.it</a></p>
+        <p><strong>Suggested citation:</strong> [Insert poster citation format here]</p>
+      </article>
+    </section>
+
+    <section class="card" id="references">
+      <div class="kicker">References</div>
+      <h2>Reference list</h2>
+      <ol class="list">
+        <li>Reference 1. Replace with the first full bibliographic reference.</li>
+        <li>Reference 2. Replace with the second full bibliographic reference.</li>
+        <li>Reference 3. Replace with the third full bibliographic reference.</li>
+        <li>Reference 4. Continue the full list or link to a separate PDF if the bibliography is long.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
